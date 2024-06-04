@@ -1,0 +1,238 @@
+body {
+    background-color: black;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width:100%;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background-color: white;
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 10px;
+    font-size: 110%;
+}
+.navMenu {
+    cursor: pointer;
+    background-color: white;
+    
+    width: auto;
+    color: rgb(0, 0, 0);
+
+    display:flex;
+    gap: 2rem;
+    align-items:center;
+}
+.frontTitleText{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10%; left: 29%;
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1% 1%;
+    font-size: 700%;
+    border-radius: 10px ;
+    
+}
+.navButton:hover{
+text-decoration: underline rgb(7, 7, 77) 3px;
+}
+.companyLogo{
+    cursor: pointer;
+}
+main{
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    border-bottom: 2px solid yellow;
+}
+hr{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.seсTitle{
+    color: white;
+    font-size: 250%;
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(7, 7, 77); 
+
+}
+.secOne{
+    color: white;
+    display: flex;
+    gap: 5%;
+    padding-right: 3%;
+}
+.secOneText{
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 150%;
+    text-align: justify;
+}
+
+
+
+
+.secTwo{
+    color: white;
+    text-align: center;
+}
+.secTwoImg{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.secTwoTltips{
+    border: 0px solid rgb(251, 255, 0);
+    color: white;
+    margin-left: 0.5%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 55%;
+    grid-row-gap: 20%;
+    
+    width: 850px;
+    height: 400px;
+    padding: 2% 2% 2% 2%;
+    position: absolute;
+     left: 23%
+}
+.tltp_1,.tltp_2,.tltp_3,.tltp_4,.tltp_5{
+    border: 1px solid rgb(238, 255, 0);
+    padding: 10% 10% 10% 10%;
+    display: inline;
+    margin: auto;
+    border-radius: 20px;
+    text-shadow: 1px 2px 8px  rgb(255, 255, 255);
+    font-size: 120%;
+    width:200px;
+}
+.tltp_1text,.tltp_2text,.tltp_3text,
+.tltp_4text,.tltp_5text{
+    border: 1px solid rgb(255, 255, 255);
+    background-color:rgb(2, 2, 43);
+    padding: 10% 10% 10% 10%;
+    width: 150%;
+    display: none;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 110%;
+    position: absolute;
+    word-spacing:3px;
+    
+}
+.tltp_1:hover + .tltp_1text,
+.tltp_1:focus + .tltp_1text,
+.tltp_2:hover + .tltp_2text,
+.tltp_2:focus + .tltp_2text,
+.tltp_3:hover + .tltp_3text,
+.tltp_3:focus + .tltp_3text,
+.tltp_4:hover + .tltp_4text,
+.tltp_4:focus + .tltp_4text,
+.tltp_5:hover + .tltp_5text,
+.tltp_5:focus + .tltp_5text{
+    display: block;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.infoIcon{
+    width: 20px;
+    height: 20px;
+    color: rgb(238, 255, 0);
+    right: 50%;
+}
+
+
+
+
+.secThree{
+  
+}
+.imgWindow{
+    display: block;
+    grid-template-columns: 100px 850px 100px;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    margin:auto;
+    padding:auto;
+    width:54%;
+}
+.imgRow{
+    display: block;
+    border:3px solid #ffff00;
+    border-radius: 1%;
+    margin:auto;
+    padding:auto;
+    max-width: 800px;
+}
+.imgRowTitle{
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    font-size: 30px;
+}
+.imgWindowTitle{
+    color:white;
+    display:block;
+    text-align: center;
+    margin:auto;
+    padding-bottom:2%;
+    font-size:50px;
+}
+.imgToggleRow{
+    display: flex;
+    justify-content: center;
+}
+.imgToggleCircles{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+    cursor: pointer;
+}
+.imgToggleCircles :hover{
+    color:rgb(175, 175, 175)
+}
+.imgToggleCircles :active{
+    color:rgb(41, 41, 41);
+}
+
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
